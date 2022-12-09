@@ -28,7 +28,7 @@ include_directories(base)
 add_library(
   ${PROJECT_NAME}
   STATIC
-  ${PROJECT_SOURCE_DIR}/src/Date.cc
+  ${PROJECT_SOURCE_DIR}/base/Date.cc
 )
 
 if (CANARY_OPT_BUILD_UNITTESTS)

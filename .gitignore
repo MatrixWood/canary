@@ -36,3 +36,4 @@ build_cmake
 compile_commands.json
 
 .cache
+.DS_Store
