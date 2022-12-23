@@ -11,6 +11,7 @@
 namespace canary {
 
 class Date : public canary::Copyable {
+ public:
   Date() : microSecondsSinceEpoch_(0){};
 
   explicit Date(int64_t microSec) : microSecondsSinceEpoch_(microSec){};

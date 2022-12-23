@@ -7,6 +7,7 @@ enable_testing()
 find_package(GTest REQUIRED)
 
 set(CANARY_TEST_LIST
+  DateUnittest
 )
 
 foreach(src ${CANARY_TEST_LIST})
