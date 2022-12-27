@@ -24,11 +24,13 @@ include(GNUInstallDirs)
 include(CMakePackageConfigHelpers)
 
 include_directories(base)
+include_directories(net)
 
 add_library(
   ${PROJECT_NAME}
   STATIC
   ${PROJECT_SOURCE_DIR}/base/Date.cc
+  ${PROJECT_SOURCE_DIR}/net/InetAddress.cc
 )
 
 if (CANARY_OPT_BUILD_UNITTESTS)

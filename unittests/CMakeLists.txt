@@ -8,6 +8,7 @@ find_package(GTest REQUIRED)
 
 set(CANARY_TEST_LIST
   DateUnittest
+  InetAddressUnittest
 )
 
 foreach(src ${CANARY_TEST_LIST})
