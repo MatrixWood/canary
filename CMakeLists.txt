@@ -31,6 +31,12 @@ add_library(
   STATIC
   ${PROJECT_SOURCE_DIR}/base/Date.cc
   ${PROJECT_SOURCE_DIR}/net/InetAddress.cc
+  ${PROJECT_SOURCE_DIR}/net/Channel.cc
+  ${PROJECT_SOURCE_DIR}/net/EventLoop.cc
+  ${PROJECT_SOURCE_DIR}/net/inner/Poller.cc
+  ${PROJECT_SOURCE_DIR}/net/inner/EpollPoller.cc
+  ${PROJECT_SOURCE_DIR}/net/inner/Timer.cc
+  ${PROJECT_SOURCE_DIR}/net/inner/TimerQueue.cc
 )
 
 if (CANARY_OPT_BUILD_UNITTESTS)
