@@ -95,8 +95,6 @@ class Channel : NonCopyable {
  private:
   friend class EventLoop;
   friend class EpollPoller;
-  friend class KQueue;
-  friend class PollPoller;
 
   void update();
 
