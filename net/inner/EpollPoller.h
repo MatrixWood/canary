@@ -22,13 +22,14 @@ class EpollPoller : public Poller {
   virtual void removeChannel(Channel *channel) override;
 
  private:
+  void update(int operation, Channel *channel);
+  void fillActiveChannels(int numEvents, ChannelList *activeChannels) const;
+
   static const int kInitEventListSize = 16;
   int epollfd_;
   EventList events_;
-  void update(int operation, Channel *channel);
   using ChannelMap = std::map<int, Channel *>;
   ChannelMap channels_;
-  void fillActiveChannels(int numEvents, ChannelList *activeChannels) const;
 };
 
 }  // namespace canary
