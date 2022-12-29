@@ -37,6 +37,7 @@ add_library(
   ${PROJECT_SOURCE_DIR}/net/inner/EpollPoller.cc
   ${PROJECT_SOURCE_DIR}/net/inner/Timer.cc
   ${PROJECT_SOURCE_DIR}/net/inner/TimerQueue.cc
+  ${PROJECT_SOURCE_DIR}/net/inner/Socket.cc
 )
 
 if (CANARY_OPT_BUILD_UNITTESTS)
