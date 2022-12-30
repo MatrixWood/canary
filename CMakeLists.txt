@@ -39,11 +39,14 @@ add_library(
   ${PROJECT_SOURCE_DIR}/net/EventLoopThread.cc
   ${PROJECT_SOURCE_DIR}/net/EventLoopThreadPool.cc
   ${PROJECT_SOURCE_DIR}/net/TcpServer.cc
+  ${PROJECT_SOURCE_DIR}/net/TcpClient.cc
   ${PROJECT_SOURCE_DIR}/net/inner/Poller.cc
   ${PROJECT_SOURCE_DIR}/net/inner/EpollPoller.cc
   ${PROJECT_SOURCE_DIR}/net/inner/Timer.cc
   ${PROJECT_SOURCE_DIR}/net/inner/TimerQueue.cc
   ${PROJECT_SOURCE_DIR}/net/inner/Socket.cc
+  ${PROJECT_SOURCE_DIR}/net/inner/Acceptor.cc
+  ${PROJECT_SOURCE_DIR}/net/inner/Connector.cc
   ${PROJECT_SOURCE_DIR}/net/inner/TcpConnectionImpl.cc
 )
 
