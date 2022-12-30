@@ -14,7 +14,7 @@ project(
 )
 
 option(CANARY_OPT_BUILD_UNITTESTS "Build all unittests" ON)
-option(CANARY_OPT_BUILD_EXAMPLES "Build all examples" OFF)
+option(CANARY_OPT_BUILD_EXAMPLES "Build all examples" ON)
 
 message(STATUS "CANARY_OPT_BUILD_UNITTESTS is ${CANARY_OPT_BUILD_UNITTESTS}")
 message(STATUS "CANARY_OPT_BUILD_EXAMPLES is ${CANARY_OPT_BUILD_EXAMPLES}")
