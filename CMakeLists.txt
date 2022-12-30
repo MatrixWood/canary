@@ -30,14 +30,21 @@ add_library(
   ${PROJECT_NAME}
   STATIC
   ${PROJECT_SOURCE_DIR}/base/Date.cc
+  ${PROJECT_SOURCE_DIR}/base/MsgBuffer.cc
+  ${PROJECT_SOURCE_DIR}/base/TimingWheel.cc
+  ${PROJECT_SOURCE_DIR}/base/Utility.cc
   ${PROJECT_SOURCE_DIR}/net/InetAddress.cc
   ${PROJECT_SOURCE_DIR}/net/Channel.cc
   ${PROJECT_SOURCE_DIR}/net/EventLoop.cc
+  ${PROJECT_SOURCE_DIR}/net/EventLoopThread.cc
+  ${PROJECT_SOURCE_DIR}/net/EventLoopThreadPool.cc
+  ${PROJECT_SOURCE_DIR}/net/TcpServer.cc
   ${PROJECT_SOURCE_DIR}/net/inner/Poller.cc
   ${PROJECT_SOURCE_DIR}/net/inner/EpollPoller.cc
   ${PROJECT_SOURCE_DIR}/net/inner/Timer.cc
   ${PROJECT_SOURCE_DIR}/net/inner/TimerQueue.cc
   ${PROJECT_SOURCE_DIR}/net/inner/Socket.cc
+  ${PROJECT_SOURCE_DIR}/net/inner/TcpConnectionImpl.cc
 )
 
 if (CANARY_OPT_BUILD_UNITTESTS)
