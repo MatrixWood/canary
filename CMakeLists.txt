@@ -33,6 +33,8 @@ add_library(
   ${PROJECT_SOURCE_DIR}/base/MsgBuffer.cc
   ${PROJECT_SOURCE_DIR}/base/TimingWheel.cc
   ${PROJECT_SOURCE_DIR}/base/Utility.cc
+  ${PROJECT_SOURCE_DIR}/base/Logger.cc
+  ${PROJECT_SOURCE_DIR}/base/LogStream.cc
   ${PROJECT_SOURCE_DIR}/net/InetAddress.cc
   ${PROJECT_SOURCE_DIR}/net/Channel.cc
   ${PROJECT_SOURCE_DIR}/net/EventLoop.cc
