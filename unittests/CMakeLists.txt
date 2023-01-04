@@ -10,6 +10,7 @@ set(CANARY_TEST_LIST
   DateUnittest
   InetAddressUnittest
   LoggerUnittest
+  TimingWheelUnittest
 )
 
 foreach(src ${CANARY_TEST_LIST})
