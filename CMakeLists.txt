@@ -40,6 +40,7 @@ add_library(
   ${PROJECT_SOURCE_DIR}/canary/base/Logger.cc
   ${PROJECT_SOURCE_DIR}/canary/base/LogStream.cc
   ${PROJECT_SOURCE_DIR}/canary/base/Md5.cc
+
   ${PROJECT_SOURCE_DIR}/canary/net/InetAddress.cc
   ${PROJECT_SOURCE_DIR}/canary/net/Channel.cc
   ${PROJECT_SOURCE_DIR}/canary/net/EventLoop.cc
@@ -55,6 +56,9 @@ add_library(
   ${PROJECT_SOURCE_DIR}/canary/net/inner/Acceptor.cc
   ${PROJECT_SOURCE_DIR}/canary/net/inner/Connector.cc
   ${PROJECT_SOURCE_DIR}/canary/net/inner/TcpConnectionImpl.cc
+
+  ${PROJECT_SOURCE_DIR}/canary/http/ClassMap.cc
+  ${PROJECT_SOURCE_DIR}/canary/http/HttpUtils.cc
 )
 
 list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake/cmake_modules/)
@@ -64,6 +68,9 @@ target_link_libraries(${PROJECT_NAME} PRIVATE UUID_lib)
 
 find_package(ZLIB REQUIRED)
 target_link_libraries(${PROJECT_NAME} PRIVATE ZLIB::ZLIB)
+
+find_package(Jsoncpp REQUIRED)
+target_link_libraries(${PROJECT_NAME} PUBLIC Jsoncpp_lib)
 
 if(TARGET std::filesystem)
   target_link_libraries(${PROJECT_NAME} PUBLIC std::filesystem)
