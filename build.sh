@@ -41,8 +41,8 @@ function build_canary() {
       exit -1
   fi
 
-  #echo "Installing ..."
-  #$make_program install
+  echo "Installing ..."
+  $make_program install
 
   #Go back to the current directory
   cd $current_dir
