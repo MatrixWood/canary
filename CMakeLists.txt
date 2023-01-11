@@ -23,7 +23,7 @@ message(STATUS "CANARY_OPT_BUILD_EXAMPLES is ${CANARY_OPT_BUILD_EXAMPLES}")
 include(GNUInstallDirs)
 include(CMakePackageConfigHelpers)
 
-list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules/)
+list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake/cmake_modules/)
 
 find_package(Filesystem COMPONENTS Final)
 if(CXX_FILESYSTEM_HAVE_FS)
