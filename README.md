@@ -1,2 +1,7 @@
 # canary
-small and fast net lib to support bonfire
+small and fast net lib.
+aim at the list:
+- http
+- mysql
+- redis
+...
