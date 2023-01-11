@@ -69,6 +69,9 @@ target_link_libraries(${PROJECT_NAME} PRIVATE UUID_lib)
 find_package(ZLIB REQUIRED)
 target_link_libraries(${PROJECT_NAME} PRIVATE ZLIB::ZLIB)
 
+find_package(Jsoncpp REQUIRED)
+target_link_libraries(${PROJECT_NAME} PUBLIC Jsoncpp_lib)
+
 if(TARGET std::filesystem)
   target_link_libraries(${PROJECT_NAME} PUBLIC std::filesystem)
 endif()
