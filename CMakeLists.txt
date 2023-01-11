@@ -57,6 +57,7 @@ add_library(
   ${PROJECT_SOURCE_DIR}/canary/net/inner/Connector.cc
   ${PROJECT_SOURCE_DIR}/canary/net/inner/TcpConnectionImpl.cc
 
+  ${PROJECT_SOURCE_DIR}/canary/http/ClassMap.cc
   ${PROJECT_SOURCE_DIR}/canary/http/HttpUtils.cc
 )
 
