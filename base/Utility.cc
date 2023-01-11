@@ -151,13 +151,6 @@ bool verifySslName(const std::string &certName, const std::string &hostname) {
   return certName == hostname;
 }
 
-}  // namespace utils
-}  // namespace canary
-
-namespace canary {
-
-namespace utils {
-
 static const std::string base64Chars =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     "abcdefghijklmnopqrstuvwxyz"
@@ -946,4 +939,5 @@ bool secureRandomBytes(void *ptr, size_t size) {
 }
 
 }  // namespace utils
+
 }  // namespace canary
