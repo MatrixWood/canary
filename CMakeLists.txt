@@ -26,6 +26,9 @@ include(CMakePackageConfigHelpers)
 include_directories(canary)
 include_directories(canary/base)
 include_directories(canary/net)
+include_directories(canary/http)
+include_directories(canary/mysql)
+include_directories(canary/redis)
 
 add_library(
   ${PROJECT_NAME}
